@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0b0712"><meta name="description" content="Support Confused RV and help keep the streams going."><title>Support Confused RV 💙</title><link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<main class="page">
+  <section class="support-shell">
+    <header class="hero">
+      <div class="logo" aria-label="Confused RV logo"><span>CONFUSED</span><b>RV</b></div>
+      <div class="hero-copy"><div class="eyebrow">CONFUSED RV · GAMING</div><h1>Support the stream <span>💗</span></h1><p>Your support keeps the streams going.</p></div>
+    </header>
+    <div class="content-grid">
+      <section class="panel pay-panel">
+        <h2>Pay via UPI</h2><p class="sub">Mobile viewers — choose an amount and your UPI app will open.</p>
+        <label class="field-label" for="customAmount">AMOUNT</label>
+        <div class="amount-input"><span>₹</span><input id="customAmount" type="number" inputmode="numeric" min="1" max="100000" value="101" aria-label="Payment amount"><button id="applyAmount" type="button">Apply</button></div>
+        <div class="amounts" role="group" aria-label="Choose an amount"><button class="amount" data-amount="51">₹51</button><button class="amount selected" data-amount="101">₹101</button><button class="amount" data-amount="201">₹201</button><button class="amount" data-amount="501">₹501</button></div>
+        <div class="apps"><button class="app" data-app="gpay"><i class="dot gpay"></i>Google Pay</button><button class="app" data-app="phonepe"><i class="dot phonepe"></i>PhonePe</button><button class="app" data-app="paytm"><i class="dot paytm"></i>Paytm</button><button class="app" data-app="bhim"><i class="dot bhim"></i>BHIM</button></div>
+        <button class="other-app" data-app="other" type="button">Other UPI app <span>→</span></button>
+        <p class="fine-print">If an app doesn’t open, try another button or copy the UPI ID on the right.</p>
+      </section>
+      <section class="panel qr-panel">
+        <h2>Scan to pay</h2><p class="sub">PC viewers — scan this QR with any UPI app.</p>
+        <div class="qr-frame"><img id="upiQr" alt="QR code for UPI payment" width="240" height="240"></div>
+        <p class="qr-amount">Amount: <strong id="chosenAmount">₹101</strong></p><p class="scan-hint">Scan with your phone to pay.</p>
+        <div class="upi-box"><div><span>UPI ID</span><strong id="upiId">vastrakar.rahul@ybl</strong></div><button id="copyBtn" type="button">COPY</button></div>
+      </section>
+    </div>
+    <div class="notice" id="notice" role="status" aria-live="polite"></div>
+    <footer>UPI payment · No payment details are stored on this page</footer>
+  </section>
+</main><script src="./app.js"></script>
+</body></html>
